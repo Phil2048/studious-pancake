@@ -1,0 +1,20 @@
+name: Airplus
+desc: 解锁自用会员   
+
+http:
+  mitm:
+    - "api.revenuecat.com"
+
+  script:
+    - match: https://api.revenuecat.com\/v1\/(subscribers|receipts)
+      name: pillow
+      type: response
+      require-body: true
+      timeout: 10
+      
+script-providers:
+  pillow:
+    url: https://github.com/Alex0510/Eric/blob/master/surge/Script/pillow.js
+    interval: 86400
+     interval: 86400
+    
