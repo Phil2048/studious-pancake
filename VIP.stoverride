@@ -1,12 +1,12 @@
-name: Airplus
+name: Phil
 desc: 解锁自用会员   
 
 http:
   mitm:
-    - "api.revenuecat.com"
+    - "buy.itunes.apple.com"
 
   script:
-    - match: https://api.revenuecat.com\/v1\/(subscribers|receipts)
+    - match: ^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt
       name: pillow
       type: response
       require-body: true
@@ -14,5 +14,5 @@ http:
       
 script-providers:
   pillow:
-    url: https://github.com/Alex0510/Eric/blob/master/surge/Script/pillow.js
+    url: https://raw.githubusercontent.com/Alex0510/Eric/master/surge/Script/infusePro.js
     interval: 86400   
