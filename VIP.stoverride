@@ -15,6 +15,4 @@ http:
 script-providers:
   pillow:
     url: https://github.com/Alex0510/Eric/blob/master/surge/Script/pillow.js
-    interval: 86400
-     interval: 86400
-    
+    interval: 86400   
